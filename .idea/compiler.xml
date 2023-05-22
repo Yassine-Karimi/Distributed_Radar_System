@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="radar-service" />
+        <module name="grpc-client" />
+        <module name="infractions-service" />
+        <module name="eureka-discovery" />
+        <module name="gateway-service" />
+        <module name="Comptegrpc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Comptegrpc" target="17" />
+      <module name="eureka-discovery" target="17" />
+      <module name="gateway-service" target="17" />
+      <module name="grpc-client" target="17" />
+      <module name="infractions-service" target="17" />
+      <module name="radar-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Comptegrpc" options="-parameters" />
+      <module name="eureka-discovery" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+      <module name="infractions-service" options="-parameters" />
+      <module name="radar-service" options="-parameters" />
+    </option>
+  </component>
+</project>
