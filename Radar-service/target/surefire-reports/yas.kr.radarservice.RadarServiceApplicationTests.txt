@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: yas.kr.radarservice.RadarServiceApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.597 s <<< FAILURE! - in yas.kr.radarservice.RadarServiceApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NoClassDefFoundError: javax/persistence/EntityManagerFactory
+Caused by: java.lang.ClassNotFoundException: javax.persistence.EntityManagerFactory
+

@@ -1,0 +1,12 @@
+yas\kr\radarservice\repositories\RadarRepository.class
+yas\kr\radarservice\model\Proprietaire.class
+yas\kr\radarservice\entities\Radar.class
+yas\kr\radarservice\model\Infraction$InfractionBuilder.class
+yas\kr\radarservice\model\Infraction.class
+yas\kr\radarservice\web\RadarRestController.class
+yas\kr\radarservice\feign\InfractionRestClient.class
+yas\kr\radarservice\model\Vehicule.class
+yas\kr\radarservice\RadarServiceApplication.class
+yas\kr\radarservice\feign\ImmatriculationRestClient.class
+yas\kr\radarservice\model\Proprietaire$ProprietaireBuilder.class
+yas\kr\radarservice\model\Vehicule$VehiculeBuilder.class

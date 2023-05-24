@@ -1,0 +1,9 @@
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\model\Proprietaire.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\repositories\RadarRepository.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\entities\Radar.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\model\Vehicule.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\RadarServiceApplication.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\web\RadarRestController.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\feign\InfractionRestClient.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\feign\ImmatriculationRestClient.java
+C:\Users\HP\Documents\Spring_Projet\Radar-service\src\main\java\yas\kr\radarservice\model\Infraction.java
