@@ -27,30 +27,30 @@ public final class RadarServiceGrpc {
   public static final String SERVICE_NAME = "RadarService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<yas.kr.stubs.RadarOuterClass.DetectRequest,
-      yas.kr.stubs.RadarOuterClass.Infraction> getDetectInfractionMethod;
+  private static volatile io.grpc.MethodDescriptor<RadarOuterClass.DetectRequest,
+      RadarOuterClass.Infraction> getDetectInfractionMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DetectInfraction",
-      requestType = yas.kr.stubs.RadarOuterClass.DetectRequest.class,
-      responseType = yas.kr.stubs.RadarOuterClass.Infraction.class,
+      requestType = RadarOuterClass.DetectRequest.class,
+      responseType = RadarOuterClass.Infraction.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<yas.kr.stubs.RadarOuterClass.DetectRequest,
-      yas.kr.stubs.RadarOuterClass.Infraction> getDetectInfractionMethod() {
-    io.grpc.MethodDescriptor<yas.kr.stubs.RadarOuterClass.DetectRequest, yas.kr.stubs.RadarOuterClass.Infraction> getDetectInfractionMethod;
+  public static io.grpc.MethodDescriptor<RadarOuterClass.DetectRequest,
+      RadarOuterClass.Infraction> getDetectInfractionMethod() {
+    io.grpc.MethodDescriptor<RadarOuterClass.DetectRequest, RadarOuterClass.Infraction> getDetectInfractionMethod;
     if ((getDetectInfractionMethod = RadarServiceGrpc.getDetectInfractionMethod) == null) {
       synchronized (RadarServiceGrpc.class) {
         if ((getDetectInfractionMethod = RadarServiceGrpc.getDetectInfractionMethod) == null) {
           RadarServiceGrpc.getDetectInfractionMethod = getDetectInfractionMethod = 
-              io.grpc.MethodDescriptor.<yas.kr.stubs.RadarOuterClass.DetectRequest, yas.kr.stubs.RadarOuterClass.Infraction>newBuilder()
+              io.grpc.MethodDescriptor.<RadarOuterClass.DetectRequest, RadarOuterClass.Infraction>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "RadarService", "DetectInfraction"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  yas.kr.stubs.RadarOuterClass.DetectRequest.getDefaultInstance()))
+                  RadarOuterClass.DetectRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  yas.kr.stubs.RadarOuterClass.Infraction.getDefaultInstance()))
+                  RadarOuterClass.Infraction.getDefaultInstance()))
                   .setSchemaDescriptor(new RadarServiceMethodDescriptorSupplier("DetectInfraction"))
                   .build();
           }
@@ -88,19 +88,19 @@ public final class RadarServiceGrpc {
 
     /**
      */
-    public void detectInfraction(yas.kr.stubs.RadarOuterClass.DetectRequest request,
-        io.grpc.stub.StreamObserver<yas.kr.stubs.RadarOuterClass.Infraction> responseObserver) {
+    public void detectInfraction(RadarOuterClass.DetectRequest request,
+                                 io.grpc.stub.StreamObserver<RadarOuterClass.Infraction> responseObserver) {
       asyncUnimplementedUnaryCall(getDetectInfractionMethod(), responseObserver);
     }
 
-    @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
+    @Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
             getDetectInfractionMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                yas.kr.stubs.RadarOuterClass.DetectRequest,
-                yas.kr.stubs.RadarOuterClass.Infraction>(
+                RadarOuterClass.DetectRequest,
+                RadarOuterClass.Infraction>(
                   this, METHODID_DETECT_INFRACTION)))
           .build();
     }
@@ -118,7 +118,7 @@ public final class RadarServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RadarServiceStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RadarServiceStub(channel, callOptions);
@@ -126,8 +126,8 @@ public final class RadarServiceGrpc {
 
     /**
      */
-    public void detectInfraction(yas.kr.stubs.RadarOuterClass.DetectRequest request,
-        io.grpc.stub.StreamObserver<yas.kr.stubs.RadarOuterClass.Infraction> responseObserver) {
+    public void detectInfraction(RadarOuterClass.DetectRequest request,
+                                 io.grpc.stub.StreamObserver<RadarOuterClass.Infraction> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getDetectInfractionMethod(), getCallOptions()), request, responseObserver);
     }
@@ -145,7 +145,7 @@ public final class RadarServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RadarServiceBlockingStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RadarServiceBlockingStub(channel, callOptions);
@@ -153,7 +153,7 @@ public final class RadarServiceGrpc {
 
     /**
      */
-    public yas.kr.stubs.RadarOuterClass.Infraction detectInfraction(yas.kr.stubs.RadarOuterClass.DetectRequest request) {
+    public RadarOuterClass.Infraction detectInfraction(RadarOuterClass.DetectRequest request) {
       return blockingUnaryCall(
           getChannel(), getDetectInfractionMethod(), getCallOptions(), request);
     }
@@ -171,7 +171,7 @@ public final class RadarServiceGrpc {
       super(channel, callOptions);
     }
 
-    @java.lang.Override
+    @Override
     protected RadarServiceFutureStub build(io.grpc.Channel channel,
         io.grpc.CallOptions callOptions) {
       return new RadarServiceFutureStub(channel, callOptions);
@@ -179,8 +179,8 @@ public final class RadarServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<yas.kr.stubs.RadarOuterClass.Infraction> detectInfraction(
-        yas.kr.stubs.RadarOuterClass.DetectRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<RadarOuterClass.Infraction> detectInfraction(
+        RadarOuterClass.DetectRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDetectInfractionMethod(), getCallOptions()), request);
     }
@@ -201,21 +201,21 @@ public final class RadarServiceGrpc {
       this.methodId = methodId;
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_DETECT_INFRACTION:
-          serviceImpl.detectInfraction((yas.kr.stubs.RadarOuterClass.DetectRequest) request,
-              (io.grpc.stub.StreamObserver<yas.kr.stubs.RadarOuterClass.Infraction>) responseObserver);
+          serviceImpl.detectInfraction((RadarOuterClass.DetectRequest) request,
+              (io.grpc.stub.StreamObserver<RadarOuterClass.Infraction>) responseObserver);
           break;
         default:
           throw new AssertionError();
       }
     }
 
-    @java.lang.Override
-    @java.lang.SuppressWarnings("unchecked")
+    @Override
+    @SuppressWarnings("unchecked")
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
@@ -229,12 +229,12 @@ public final class RadarServiceGrpc {
       implements io.grpc.protobuf.ProtoFileDescriptorSupplier, io.grpc.protobuf.ProtoServiceDescriptorSupplier {
     RadarServiceBaseDescriptorSupplier() {}
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.getDescriptor();
+      return RadarOuterClass.getDescriptor();
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.ServiceDescriptor getServiceDescriptor() {
       return getFileDescriptor().findServiceByName("RadarService");
     }
@@ -254,7 +254,7 @@ public final class RadarServiceGrpc {
       this.methodName = methodName;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Descriptors.MethodDescriptor getMethodDescriptor() {
       return getServiceDescriptor().findMethodByName(methodName);
     }

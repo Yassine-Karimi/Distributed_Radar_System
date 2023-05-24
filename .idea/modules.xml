@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/Distributed_Radar_System.iml" filepath="$PROJECT_DIR$/.idea/Distributed_Radar_System.iml" />
       <module fileurl="file://$PROJECT_DIR$/eurika-discovery/eureka-discovery.iml" filepath="$PROJECT_DIR$/eurika-discovery/eureka-discovery.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway/gateway-service.iml" filepath="$PROJECT_DIR$/gateway/gateway-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Radar-Client-grpc/grpc-client.iml" filepath="$PROJECT_DIR$/Radar-Client-grpc/grpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/infractions-service/infractions-service.iml" filepath="$PROJECT_DIR$/infractions-service/infractions-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/Radar-service/radar-service.iml" filepath="$PROJECT_DIR$/Radar-service/radar-service.iml" />
     </modules>

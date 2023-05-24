@@ -121,7 +121,7 @@ public final class RadarOut {
     }
 
     @Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return RadarOut.internal_static_DetectRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -335,7 +335,7 @@ public final class RadarOut {
 
     @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -352,7 +352,7 @@ public final class RadarOut {
       }
 
       @Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return RadarOut.internal_static_DetectRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -365,7 +365,7 @@ public final class RadarOut {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -855,7 +855,7 @@ public final class RadarOut {
     }
 
     @Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return RadarOut.internal_static_Infraction_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -1261,7 +1261,7 @@ public final class RadarOut {
 
     @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1278,7 +1278,7 @@ public final class RadarOut {
       }
 
       @Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return RadarOut.internal_static_Infraction_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -1291,7 +1291,7 @@ public final class RadarOut {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2176,7 +2176,7 @@ public final class RadarOut {
     }
 
     @Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return RadarOut.internal_static_Vehicule_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -2506,7 +2506,7 @@ public final class RadarOut {
 
     @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2523,7 +2523,7 @@ public final class RadarOut {
       }
 
       @Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return RadarOut.internal_static_Vehicule_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -2536,7 +2536,7 @@ public final class RadarOut {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3142,7 +3142,7 @@ public final class RadarOut {
     }
 
     @Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
       return RadarOut.internal_static_Radar_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
@@ -3380,7 +3380,7 @@ public final class RadarOut {
 
     @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3397,7 +3397,7 @@ public final class RadarOut {
       }
 
       @Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
         return RadarOut.internal_static_Radar_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
@@ -3410,7 +3410,7 @@ public final class RadarOut {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }

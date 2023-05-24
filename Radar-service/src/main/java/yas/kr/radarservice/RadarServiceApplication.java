@@ -34,6 +34,7 @@ public class RadarServiceApplication {
                             RepositoryRestConfiguration restConfiguration ){
         restConfiguration.exposeIdsFor(Radar.class);
         return args -> {
+
             for(int i = 0; i < 5; i++) {
                 Radar radar = new Radar();
                 radar.setMaxSpeed(100.0 + i);

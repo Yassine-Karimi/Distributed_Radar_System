@@ -51,14 +51,14 @@ public final class RadarOuterClass {
     private DetectRequest() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new DetectRequest();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -69,7 +69,7 @@ public final class RadarOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -117,15 +117,15 @@ public final class RadarOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_DetectRequest_descriptor;
+      return RadarOuterClass.internal_static_DetectRequest_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_DetectRequest_fieldAccessorTable
+      return RadarOuterClass.internal_static_DetectRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              yas.kr.stubs.RadarOuterClass.DetectRequest.class, yas.kr.stubs.RadarOuterClass.DetectRequest.Builder.class);
+              DetectRequest.class, Builder.class);
     }
 
     public static final int RADARID_FIELD_NUMBER = 1;
@@ -159,7 +159,7 @@ public final class RadarOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -169,7 +169,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (radarId_ != 0L) {
@@ -184,7 +184,7 @@ public final class RadarOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -207,28 +207,28 @@ public final class RadarOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof yas.kr.stubs.RadarOuterClass.DetectRequest)) {
+      if (!(obj instanceof DetectRequest)) {
         return super.equals(obj);
       }
-      yas.kr.stubs.RadarOuterClass.DetectRequest other = (yas.kr.stubs.RadarOuterClass.DetectRequest) obj;
+      DetectRequest other = (DetectRequest) obj;
 
       if (getRadarId()
           != other.getRadarId()) return false;
       if (getVehiculeId()
           != other.getVehiculeId()) return false;
-      if (java.lang.Double.doubleToLongBits(getSpeed())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getSpeed())
+          != Double.doubleToLongBits(
               other.getSpeed())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -243,75 +243,75 @@ public final class RadarOuterClass {
           getVehiculeId());
       hash = (37 * hash) + SPEED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getSpeed()));
+          Double.doubleToLongBits(getSpeed()));
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(byte[] data)
+    public static DetectRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(java.io.InputStream input)
+    public static DetectRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseDelimitedFrom(java.io.InputStream input)
+    public static DetectRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseDelimitedFrom(
+    public static DetectRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest parseFrom(
+    public static DetectRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -319,23 +319,23 @@ public final class RadarOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(yas.kr.stubs.RadarOuterClass.DetectRequest prototype) {
+    public static Builder newBuilder(DetectRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -345,18 +345,18 @@ public final class RadarOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:DetectRequest)
-        yas.kr.stubs.RadarOuterClass.DetectRequestOrBuilder {
+        DetectRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_DetectRequest_descriptor;
+        return RadarOuterClass.internal_static_DetectRequest_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_DetectRequest_fieldAccessorTable
+        return RadarOuterClass.internal_static_DetectRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                yas.kr.stubs.RadarOuterClass.DetectRequest.class, yas.kr.stubs.RadarOuterClass.DetectRequest.Builder.class);
+                DetectRequest.class, Builder.class);
       }
 
       // Construct using yas.kr.stubs.RadarOuterClass.DetectRequest.newBuilder()
@@ -365,7 +365,7 @@ public final class RadarOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -374,7 +374,7 @@ public final class RadarOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         radarId_ = 0L;
@@ -386,29 +386,29 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_DetectRequest_descriptor;
+        return RadarOuterClass.internal_static_DetectRequest_descriptor;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.DetectRequest getDefaultInstanceForType() {
-        return yas.kr.stubs.RadarOuterClass.DetectRequest.getDefaultInstance();
+      @Override
+      public DetectRequest getDefaultInstanceForType() {
+        return DetectRequest.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.DetectRequest build() {
-        yas.kr.stubs.RadarOuterClass.DetectRequest result = buildPartial();
+      @Override
+      public DetectRequest build() {
+        DetectRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.DetectRequest buildPartial() {
-        yas.kr.stubs.RadarOuterClass.DetectRequest result = new yas.kr.stubs.RadarOuterClass.DetectRequest(this);
+      @Override
+      public DetectRequest buildPartial() {
+        DetectRequest result = new DetectRequest(this);
         result.radarId_ = radarId_;
         result.vehiculeId_ = vehiculeId_;
         result.speed_ = speed_;
@@ -416,50 +416,50 @@ public final class RadarOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yas.kr.stubs.RadarOuterClass.DetectRequest) {
-          return mergeFrom((yas.kr.stubs.RadarOuterClass.DetectRequest)other);
+        if (other instanceof DetectRequest) {
+          return mergeFrom((DetectRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(yas.kr.stubs.RadarOuterClass.DetectRequest other) {
-        if (other == yas.kr.stubs.RadarOuterClass.DetectRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(DetectRequest other) {
+        if (other == DetectRequest.getDefaultInstance()) return this;
         if (other.getRadarId() != 0L) {
           setRadarId(other.getRadarId());
         }
@@ -474,21 +474,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        yas.kr.stubs.RadarOuterClass.DetectRequest parsedMessage = null;
+        DetectRequest parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (yas.kr.stubs.RadarOuterClass.DetectRequest) e.getUnfinishedMessage();
+          parsedMessage = (DetectRequest) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -587,13 +587,13 @@ public final class RadarOuterClass {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -604,18 +604,18 @@ public final class RadarOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:DetectRequest)
-    private static final yas.kr.stubs.RadarOuterClass.DetectRequest DEFAULT_INSTANCE;
+    private static final DetectRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yas.kr.stubs.RadarOuterClass.DetectRequest();
+      DEFAULT_INSTANCE = new DetectRequest();
     }
 
-    public static yas.kr.stubs.RadarOuterClass.DetectRequest getDefaultInstance() {
+    public static DetectRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<DetectRequest>
         PARSER = new com.google.protobuf.AbstractParser<DetectRequest>() {
-      @java.lang.Override
+      @Override
       public DetectRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -628,13 +628,13 @@ public final class RadarOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<DetectRequest> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public yas.kr.stubs.RadarOuterClass.DetectRequest getDefaultInstanceForType() {
+    @Override
+    public DetectRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -654,7 +654,7 @@ public final class RadarOuterClass {
      * <code>string date = 2;</code>
      * @return The date.
      */
-    java.lang.String getDate();
+    String getDate();
     /**
      * <code>string date = 2;</code>
      * @return The bytes for date.
@@ -701,11 +701,11 @@ public final class RadarOuterClass {
      * <code>.Vehicule vehicule = 8;</code>
      * @return The vehicule.
      */
-    yas.kr.stubs.RadarOuterClass.Vehicule getVehicule();
+    Vehicule getVehicule();
     /**
      * <code>.Vehicule vehicule = 8;</code>
      */
-    yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder getVehiculeOrBuilder();
+    VehiculeOrBuilder getVehiculeOrBuilder();
 
     /**
      * <code>.Radar radar = 9;</code>
@@ -716,11 +716,11 @@ public final class RadarOuterClass {
      * <code>.Radar radar = 9;</code>
      * @return The radar.
      */
-    yas.kr.stubs.RadarOuterClass.Radar getRadar();
+    Radar getRadar();
     /**
      * <code>.Radar radar = 9;</code>
      */
-    yas.kr.stubs.RadarOuterClass.RadarOrBuilder getRadarOrBuilder();
+    RadarOrBuilder getRadarOrBuilder();
   }
   /**
    * Protobuf type {@code Infraction}
@@ -738,14 +738,14 @@ public final class RadarOuterClass {
       date_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new Infraction();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -756,7 +756,7 @@ public final class RadarOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -774,7 +774,7 @@ public final class RadarOuterClass {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               date_ = s;
               break;
@@ -805,11 +805,11 @@ public final class RadarOuterClass {
               break;
             }
             case 66: {
-              yas.kr.stubs.RadarOuterClass.Vehicule.Builder subBuilder = null;
+              Vehicule.Builder subBuilder = null;
               if (vehicule_ != null) {
                 subBuilder = vehicule_.toBuilder();
               }
-              vehicule_ = input.readMessage(yas.kr.stubs.RadarOuterClass.Vehicule.parser(), extensionRegistry);
+              vehicule_ = input.readMessage(Vehicule.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(vehicule_);
                 vehicule_ = subBuilder.buildPartial();
@@ -818,11 +818,11 @@ public final class RadarOuterClass {
               break;
             }
             case 74: {
-              yas.kr.stubs.RadarOuterClass.Radar.Builder subBuilder = null;
+              Radar.Builder subBuilder = null;
               if (radar_ != null) {
                 subBuilder = radar_.toBuilder();
               }
-              radar_ = input.readMessage(yas.kr.stubs.RadarOuterClass.Radar.parser(), extensionRegistry);
+              radar_ = input.readMessage(Radar.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(radar_);
                 radar_ = subBuilder.buildPartial();
@@ -851,15 +851,15 @@ public final class RadarOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Infraction_descriptor;
+      return RadarOuterClass.internal_static_Infraction_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Infraction_fieldAccessorTable
+      return RadarOuterClass.internal_static_Infraction_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              yas.kr.stubs.RadarOuterClass.Infraction.class, yas.kr.stubs.RadarOuterClass.Infraction.Builder.class);
+              Infraction.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -873,19 +873,19 @@ public final class RadarOuterClass {
     }
 
     public static final int DATE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object date_;
+    private volatile Object date_;
     /**
      * <code>string date = 2;</code>
      * @return The date.
      */
-    public java.lang.String getDate() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getDate() {
+      Object ref = date_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         date_ = s;
         return s;
       }
@@ -896,11 +896,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getDateBytes() {
-      java.lang.Object ref = date_;
-      if (ref instanceof java.lang.String) {
+      Object ref = date_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         date_ = b;
         return b;
       } else {
@@ -959,7 +959,7 @@ public final class RadarOuterClass {
     }
 
     public static final int VEHICULE_FIELD_NUMBER = 8;
-    private yas.kr.stubs.RadarOuterClass.Vehicule vehicule_;
+    private Vehicule vehicule_;
     /**
      * <code>.Vehicule vehicule = 8;</code>
      * @return Whether the vehicule field is set.
@@ -971,18 +971,18 @@ public final class RadarOuterClass {
      * <code>.Vehicule vehicule = 8;</code>
      * @return The vehicule.
      */
-    public yas.kr.stubs.RadarOuterClass.Vehicule getVehicule() {
-      return vehicule_ == null ? yas.kr.stubs.RadarOuterClass.Vehicule.getDefaultInstance() : vehicule_;
+    public Vehicule getVehicule() {
+      return vehicule_ == null ? Vehicule.getDefaultInstance() : vehicule_;
     }
     /**
      * <code>.Vehicule vehicule = 8;</code>
      */
-    public yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder getVehiculeOrBuilder() {
+    public VehiculeOrBuilder getVehiculeOrBuilder() {
       return getVehicule();
     }
 
     public static final int RADAR_FIELD_NUMBER = 9;
-    private yas.kr.stubs.RadarOuterClass.Radar radar_;
+    private Radar radar_;
     /**
      * <code>.Radar radar = 9;</code>
      * @return Whether the radar field is set.
@@ -994,18 +994,18 @@ public final class RadarOuterClass {
      * <code>.Radar radar = 9;</code>
      * @return The radar.
      */
-    public yas.kr.stubs.RadarOuterClass.Radar getRadar() {
-      return radar_ == null ? yas.kr.stubs.RadarOuterClass.Radar.getDefaultInstance() : radar_;
+    public Radar getRadar() {
+      return radar_ == null ? Radar.getDefaultInstance() : radar_;
     }
     /**
      * <code>.Radar radar = 9;</code>
      */
-    public yas.kr.stubs.RadarOuterClass.RadarOrBuilder getRadarOrBuilder() {
+    public RadarOrBuilder getRadarOrBuilder() {
       return getRadar();
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -1015,7 +1015,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0L) {
@@ -1048,7 +1048,7 @@ public final class RadarOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -1094,28 +1094,28 @@ public final class RadarOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof yas.kr.stubs.RadarOuterClass.Infraction)) {
+      if (!(obj instanceof Infraction)) {
         return super.equals(obj);
       }
-      yas.kr.stubs.RadarOuterClass.Infraction other = (yas.kr.stubs.RadarOuterClass.Infraction) obj;
+      Infraction other = (Infraction) obj;
 
       if (getId()
           != other.getId()) return false;
       if (!getDate()
           .equals(other.getDate())) return false;
-      if (java.lang.Double.doubleToLongBits(getVehiculeSpeed())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getVehiculeSpeed())
+          != Double.doubleToLongBits(
               other.getVehiculeSpeed())) return false;
-      if (java.lang.Double.doubleToLongBits(getRadarMaxSpeed())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getRadarMaxSpeed())
+          != Double.doubleToLongBits(
               other.getRadarMaxSpeed())) return false;
-      if (java.lang.Double.doubleToLongBits(getFineAmount())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getFineAmount())
+          != Double.doubleToLongBits(
               other.getFineAmount())) return false;
       if (getRadarId()
           != other.getRadarId()) return false;
@@ -1135,7 +1135,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -1149,13 +1149,13 @@ public final class RadarOuterClass {
       hash = (53 * hash) + getDate().hashCode();
       hash = (37 * hash) + VEHICULESPEED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getVehiculeSpeed()));
+          Double.doubleToLongBits(getVehiculeSpeed()));
       hash = (37 * hash) + RADARMAXSPEED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getRadarMaxSpeed()));
+          Double.doubleToLongBits(getRadarMaxSpeed()));
       hash = (37 * hash) + FINEAMOUNT_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getFineAmount()));
+          Double.doubleToLongBits(getFineAmount()));
       hash = (37 * hash) + RADARID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getRadarId());
@@ -1175,69 +1175,69 @@ public final class RadarOuterClass {
       return hash;
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(byte[] data)
+    public static Infraction parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(java.io.InputStream input)
+    public static Infraction parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseDelimitedFrom(java.io.InputStream input)
+    public static Infraction parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseDelimitedFrom(
+    public static Infraction parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Infraction parseFrom(
+    public static Infraction parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1245,23 +1245,23 @@ public final class RadarOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(yas.kr.stubs.RadarOuterClass.Infraction prototype) {
+    public static Builder newBuilder(Infraction prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -1271,18 +1271,18 @@ public final class RadarOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Infraction)
-        yas.kr.stubs.RadarOuterClass.InfractionOrBuilder {
+        InfractionOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Infraction_descriptor;
+        return RadarOuterClass.internal_static_Infraction_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Infraction_fieldAccessorTable
+        return RadarOuterClass.internal_static_Infraction_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                yas.kr.stubs.RadarOuterClass.Infraction.class, yas.kr.stubs.RadarOuterClass.Infraction.Builder.class);
+                Infraction.class, Builder.class);
       }
 
       // Construct using yas.kr.stubs.RadarOuterClass.Infraction.newBuilder()
@@ -1291,7 +1291,7 @@ public final class RadarOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -1300,7 +1300,7 @@ public final class RadarOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         id_ = 0L;
@@ -1332,29 +1332,29 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Infraction_descriptor;
+        return RadarOuterClass.internal_static_Infraction_descriptor;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Infraction getDefaultInstanceForType() {
-        return yas.kr.stubs.RadarOuterClass.Infraction.getDefaultInstance();
+      @Override
+      public Infraction getDefaultInstanceForType() {
+        return Infraction.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Infraction build() {
-        yas.kr.stubs.RadarOuterClass.Infraction result = buildPartial();
+      @Override
+      public Infraction build() {
+        Infraction result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Infraction buildPartial() {
-        yas.kr.stubs.RadarOuterClass.Infraction result = new yas.kr.stubs.RadarOuterClass.Infraction(this);
+      @Override
+      public Infraction buildPartial() {
+        Infraction result = new Infraction(this);
         result.id_ = id_;
         result.date_ = date_;
         result.vehiculeSpeed_ = vehiculeSpeed_;
@@ -1376,50 +1376,50 @@ public final class RadarOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yas.kr.stubs.RadarOuterClass.Infraction) {
-          return mergeFrom((yas.kr.stubs.RadarOuterClass.Infraction)other);
+        if (other instanceof Infraction) {
+          return mergeFrom((Infraction)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(yas.kr.stubs.RadarOuterClass.Infraction other) {
-        if (other == yas.kr.stubs.RadarOuterClass.Infraction.getDefaultInstance()) return this;
+      public Builder mergeFrom(Infraction other) {
+        if (other == Infraction.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -1453,21 +1453,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        yas.kr.stubs.RadarOuterClass.Infraction parsedMessage = null;
+        Infraction parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (yas.kr.stubs.RadarOuterClass.Infraction) e.getUnfinishedMessage();
+          parsedMessage = (Infraction) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1507,21 +1507,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object date_ = "";
+      private Object date_ = "";
       /**
        * <code>string date = 2;</code>
        * @return The date.
        */
-      public java.lang.String getDate() {
-        java.lang.Object ref = date_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getDate() {
+        Object ref = date_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           date_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -1530,11 +1530,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getDateBytes() {
-        java.lang.Object ref = date_;
+        Object ref = date_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           date_ = b;
           return b;
         } else {
@@ -1547,7 +1547,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDate(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -1733,9 +1733,9 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private yas.kr.stubs.RadarOuterClass.Vehicule vehicule_;
+      private Vehicule vehicule_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Vehicule, yas.kr.stubs.RadarOuterClass.Vehicule.Builder, yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder> vehiculeBuilder_;
+          Vehicule, Vehicule.Builder, VehiculeOrBuilder> vehiculeBuilder_;
       /**
        * <code>.Vehicule vehicule = 8;</code>
        * @return Whether the vehicule field is set.
@@ -1747,9 +1747,9 @@ public final class RadarOuterClass {
        * <code>.Vehicule vehicule = 8;</code>
        * @return The vehicule.
        */
-      public yas.kr.stubs.RadarOuterClass.Vehicule getVehicule() {
+      public Vehicule getVehicule() {
         if (vehiculeBuilder_ == null) {
-          return vehicule_ == null ? yas.kr.stubs.RadarOuterClass.Vehicule.getDefaultInstance() : vehicule_;
+          return vehicule_ == null ? Vehicule.getDefaultInstance() : vehicule_;
         } else {
           return vehiculeBuilder_.getMessage();
         }
@@ -1757,7 +1757,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Vehicule vehicule = 8;</code>
        */
-      public Builder setVehicule(yas.kr.stubs.RadarOuterClass.Vehicule value) {
+      public Builder setVehicule(Vehicule value) {
         if (vehiculeBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1774,7 +1774,7 @@ public final class RadarOuterClass {
        * <code>.Vehicule vehicule = 8;</code>
        */
       public Builder setVehicule(
-          yas.kr.stubs.RadarOuterClass.Vehicule.Builder builderForValue) {
+          Vehicule.Builder builderForValue) {
         if (vehiculeBuilder_ == null) {
           vehicule_ = builderForValue.build();
           onChanged();
@@ -1787,11 +1787,11 @@ public final class RadarOuterClass {
       /**
        * <code>.Vehicule vehicule = 8;</code>
        */
-      public Builder mergeVehicule(yas.kr.stubs.RadarOuterClass.Vehicule value) {
+      public Builder mergeVehicule(Vehicule value) {
         if (vehiculeBuilder_ == null) {
           if (vehicule_ != null) {
             vehicule_ =
-              yas.kr.stubs.RadarOuterClass.Vehicule.newBuilder(vehicule_).mergeFrom(value).buildPartial();
+              Vehicule.newBuilder(vehicule_).mergeFrom(value).buildPartial();
           } else {
             vehicule_ = value;
           }
@@ -1819,7 +1819,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Vehicule vehicule = 8;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.Vehicule.Builder getVehiculeBuilder() {
+      public Vehicule.Builder getVehiculeBuilder() {
         
         onChanged();
         return getVehiculeFieldBuilder().getBuilder();
@@ -1827,23 +1827,23 @@ public final class RadarOuterClass {
       /**
        * <code>.Vehicule vehicule = 8;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder getVehiculeOrBuilder() {
+      public VehiculeOrBuilder getVehiculeOrBuilder() {
         if (vehiculeBuilder_ != null) {
           return vehiculeBuilder_.getMessageOrBuilder();
         } else {
           return vehicule_ == null ?
-              yas.kr.stubs.RadarOuterClass.Vehicule.getDefaultInstance() : vehicule_;
+              Vehicule.getDefaultInstance() : vehicule_;
         }
       }
       /**
        * <code>.Vehicule vehicule = 8;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Vehicule, yas.kr.stubs.RadarOuterClass.Vehicule.Builder, yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder> 
+          Vehicule, Vehicule.Builder, VehiculeOrBuilder>
           getVehiculeFieldBuilder() {
         if (vehiculeBuilder_ == null) {
           vehiculeBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              yas.kr.stubs.RadarOuterClass.Vehicule, yas.kr.stubs.RadarOuterClass.Vehicule.Builder, yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder>(
+              Vehicule, Vehicule.Builder, VehiculeOrBuilder>(
                   getVehicule(),
                   getParentForChildren(),
                   isClean());
@@ -1852,9 +1852,9 @@ public final class RadarOuterClass {
         return vehiculeBuilder_;
       }
 
-      private yas.kr.stubs.RadarOuterClass.Radar radar_;
+      private Radar radar_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Radar, yas.kr.stubs.RadarOuterClass.Radar.Builder, yas.kr.stubs.RadarOuterClass.RadarOrBuilder> radarBuilder_;
+          Radar, Radar.Builder, RadarOrBuilder> radarBuilder_;
       /**
        * <code>.Radar radar = 9;</code>
        * @return Whether the radar field is set.
@@ -1866,9 +1866,9 @@ public final class RadarOuterClass {
        * <code>.Radar radar = 9;</code>
        * @return The radar.
        */
-      public yas.kr.stubs.RadarOuterClass.Radar getRadar() {
+      public Radar getRadar() {
         if (radarBuilder_ == null) {
-          return radar_ == null ? yas.kr.stubs.RadarOuterClass.Radar.getDefaultInstance() : radar_;
+          return radar_ == null ? Radar.getDefaultInstance() : radar_;
         } else {
           return radarBuilder_.getMessage();
         }
@@ -1876,7 +1876,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Radar radar = 9;</code>
        */
-      public Builder setRadar(yas.kr.stubs.RadarOuterClass.Radar value) {
+      public Builder setRadar(Radar value) {
         if (radarBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -1893,7 +1893,7 @@ public final class RadarOuterClass {
        * <code>.Radar radar = 9;</code>
        */
       public Builder setRadar(
-          yas.kr.stubs.RadarOuterClass.Radar.Builder builderForValue) {
+          Radar.Builder builderForValue) {
         if (radarBuilder_ == null) {
           radar_ = builderForValue.build();
           onChanged();
@@ -1906,11 +1906,11 @@ public final class RadarOuterClass {
       /**
        * <code>.Radar radar = 9;</code>
        */
-      public Builder mergeRadar(yas.kr.stubs.RadarOuterClass.Radar value) {
+      public Builder mergeRadar(Radar value) {
         if (radarBuilder_ == null) {
           if (radar_ != null) {
             radar_ =
-              yas.kr.stubs.RadarOuterClass.Radar.newBuilder(radar_).mergeFrom(value).buildPartial();
+              Radar.newBuilder(radar_).mergeFrom(value).buildPartial();
           } else {
             radar_ = value;
           }
@@ -1938,7 +1938,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Radar radar = 9;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.Radar.Builder getRadarBuilder() {
+      public Radar.Builder getRadarBuilder() {
         
         onChanged();
         return getRadarFieldBuilder().getBuilder();
@@ -1946,23 +1946,23 @@ public final class RadarOuterClass {
       /**
        * <code>.Radar radar = 9;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.RadarOrBuilder getRadarOrBuilder() {
+      public RadarOrBuilder getRadarOrBuilder() {
         if (radarBuilder_ != null) {
           return radarBuilder_.getMessageOrBuilder();
         } else {
           return radar_ == null ?
-              yas.kr.stubs.RadarOuterClass.Radar.getDefaultInstance() : radar_;
+              Radar.getDefaultInstance() : radar_;
         }
       }
       /**
        * <code>.Radar radar = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Radar, yas.kr.stubs.RadarOuterClass.Radar.Builder, yas.kr.stubs.RadarOuterClass.RadarOrBuilder> 
+          Radar, Radar.Builder, RadarOrBuilder>
           getRadarFieldBuilder() {
         if (radarBuilder_ == null) {
           radarBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              yas.kr.stubs.RadarOuterClass.Radar, yas.kr.stubs.RadarOuterClass.Radar.Builder, yas.kr.stubs.RadarOuterClass.RadarOrBuilder>(
+              Radar, Radar.Builder, RadarOrBuilder>(
                   getRadar(),
                   getParentForChildren(),
                   isClean());
@@ -1970,13 +1970,13 @@ public final class RadarOuterClass {
         }
         return radarBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -1987,18 +1987,18 @@ public final class RadarOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:Infraction)
-    private static final yas.kr.stubs.RadarOuterClass.Infraction DEFAULT_INSTANCE;
+    private static final Infraction DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yas.kr.stubs.RadarOuterClass.Infraction();
+      DEFAULT_INSTANCE = new Infraction();
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Infraction getDefaultInstance() {
+    public static Infraction getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Infraction>
         PARSER = new com.google.protobuf.AbstractParser<Infraction>() {
-      @java.lang.Override
+      @Override
       public Infraction parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2011,13 +2011,13 @@ public final class RadarOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Infraction> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public yas.kr.stubs.RadarOuterClass.Infraction getDefaultInstanceForType() {
+    @Override
+    public Infraction getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -2037,7 +2037,7 @@ public final class RadarOuterClass {
      * <code>string regNumber = 2;</code>
      * @return The regNumber.
      */
-    java.lang.String getRegNumber();
+    String getRegNumber();
     /**
      * <code>string regNumber = 2;</code>
      * @return The bytes for regNumber.
@@ -2049,7 +2049,7 @@ public final class RadarOuterClass {
      * <code>string brand = 3;</code>
      * @return The brand.
      */
-    java.lang.String getBrand();
+    String getBrand();
     /**
      * <code>string brand = 3;</code>
      * @return The bytes for brand.
@@ -2067,7 +2067,7 @@ public final class RadarOuterClass {
      * <code>string model = 5;</code>
      * @return The model.
      */
-    java.lang.String getModel();
+    String getModel();
     /**
      * <code>string model = 5;</code>
      * @return The bytes for model.
@@ -2084,11 +2084,11 @@ public final class RadarOuterClass {
      * <code>.Proprietaire proprietaire = 6;</code>
      * @return The proprietaire.
      */
-    yas.kr.stubs.RadarOuterClass.Proprietaire getProprietaire();
+    Proprietaire getProprietaire();
     /**
      * <code>.Proprietaire proprietaire = 6;</code>
      */
-    yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder getProprietaireOrBuilder();
+    ProprietaireOrBuilder getProprietaireOrBuilder();
   }
   /**
    * Protobuf type {@code Vehicule}
@@ -2108,14 +2108,14 @@ public final class RadarOuterClass {
       model_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new Vehicule();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -2126,7 +2126,7 @@ public final class RadarOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -2144,13 +2144,13 @@ public final class RadarOuterClass {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               regNumber_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               brand_ = s;
               break;
@@ -2161,17 +2161,17 @@ public final class RadarOuterClass {
               break;
             }
             case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               model_ = s;
               break;
             }
             case 50: {
-              yas.kr.stubs.RadarOuterClass.Proprietaire.Builder subBuilder = null;
+              Proprietaire.Builder subBuilder = null;
               if (proprietaire_ != null) {
                 subBuilder = proprietaire_.toBuilder();
               }
-              proprietaire_ = input.readMessage(yas.kr.stubs.RadarOuterClass.Proprietaire.parser(), extensionRegistry);
+              proprietaire_ = input.readMessage(Proprietaire.parser(), extensionRegistry);
               if (subBuilder != null) {
                 subBuilder.mergeFrom(proprietaire_);
                 proprietaire_ = subBuilder.buildPartial();
@@ -2200,15 +2200,15 @@ public final class RadarOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Vehicule_descriptor;
+      return RadarOuterClass.internal_static_Vehicule_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Vehicule_fieldAccessorTable
+      return RadarOuterClass.internal_static_Vehicule_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              yas.kr.stubs.RadarOuterClass.Vehicule.class, yas.kr.stubs.RadarOuterClass.Vehicule.Builder.class);
+              Vehicule.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -2222,19 +2222,19 @@ public final class RadarOuterClass {
     }
 
     public static final int REGNUMBER_FIELD_NUMBER = 2;
-    private volatile java.lang.Object regNumber_;
+    private volatile Object regNumber_;
     /**
      * <code>string regNumber = 2;</code>
      * @return The regNumber.
      */
-    public java.lang.String getRegNumber() {
-      java.lang.Object ref = regNumber_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getRegNumber() {
+      Object ref = regNumber_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         regNumber_ = s;
         return s;
       }
@@ -2245,11 +2245,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getRegNumberBytes() {
-      java.lang.Object ref = regNumber_;
-      if (ref instanceof java.lang.String) {
+      Object ref = regNumber_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         regNumber_ = b;
         return b;
       } else {
@@ -2258,19 +2258,19 @@ public final class RadarOuterClass {
     }
 
     public static final int BRAND_FIELD_NUMBER = 3;
-    private volatile java.lang.Object brand_;
+    private volatile Object brand_;
     /**
      * <code>string brand = 3;</code>
      * @return The brand.
      */
-    public java.lang.String getBrand() {
-      java.lang.Object ref = brand_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getBrand() {
+      Object ref = brand_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         brand_ = s;
         return s;
       }
@@ -2281,11 +2281,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getBrandBytes() {
-      java.lang.Object ref = brand_;
-      if (ref instanceof java.lang.String) {
+      Object ref = brand_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         brand_ = b;
         return b;
       } else {
@@ -2304,19 +2304,19 @@ public final class RadarOuterClass {
     }
 
     public static final int MODEL_FIELD_NUMBER = 5;
-    private volatile java.lang.Object model_;
+    private volatile Object model_;
     /**
      * <code>string model = 5;</code>
      * @return The model.
      */
-    public java.lang.String getModel() {
-      java.lang.Object ref = model_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getModel() {
+      Object ref = model_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         model_ = s;
         return s;
       }
@@ -2327,11 +2327,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getModelBytes() {
-      java.lang.Object ref = model_;
-      if (ref instanceof java.lang.String) {
+      Object ref = model_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         model_ = b;
         return b;
       } else {
@@ -2340,7 +2340,7 @@ public final class RadarOuterClass {
     }
 
     public static final int PROPRIETAIRE_FIELD_NUMBER = 6;
-    private yas.kr.stubs.RadarOuterClass.Proprietaire proprietaire_;
+    private Proprietaire proprietaire_;
     /**
      * <code>.Proprietaire proprietaire = 6;</code>
      * @return Whether the proprietaire field is set.
@@ -2352,18 +2352,18 @@ public final class RadarOuterClass {
      * <code>.Proprietaire proprietaire = 6;</code>
      * @return The proprietaire.
      */
-    public yas.kr.stubs.RadarOuterClass.Proprietaire getProprietaire() {
-      return proprietaire_ == null ? yas.kr.stubs.RadarOuterClass.Proprietaire.getDefaultInstance() : proprietaire_;
+    public Proprietaire getProprietaire() {
+      return proprietaire_ == null ? Proprietaire.getDefaultInstance() : proprietaire_;
     }
     /**
      * <code>.Proprietaire proprietaire = 6;</code>
      */
-    public yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder getProprietaireOrBuilder() {
+    public ProprietaireOrBuilder getProprietaireOrBuilder() {
       return getProprietaire();
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -2373,7 +2373,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0L) {
@@ -2397,7 +2397,7 @@ public final class RadarOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -2429,15 +2429,15 @@ public final class RadarOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof yas.kr.stubs.RadarOuterClass.Vehicule)) {
+      if (!(obj instanceof Vehicule)) {
         return super.equals(obj);
       }
-      yas.kr.stubs.RadarOuterClass.Vehicule other = (yas.kr.stubs.RadarOuterClass.Vehicule) obj;
+      Vehicule other = (Vehicule) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -2445,8 +2445,8 @@ public final class RadarOuterClass {
           .equals(other.getRegNumber())) return false;
       if (!getBrand()
           .equals(other.getBrand())) return false;
-      if (java.lang.Double.doubleToLongBits(getFiscalPower())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getFiscalPower())
+          != Double.doubleToLongBits(
               other.getFiscalPower())) return false;
       if (!getModel()
           .equals(other.getModel())) return false;
@@ -2459,7 +2459,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -2475,7 +2475,7 @@ public final class RadarOuterClass {
       hash = (53 * hash) + getBrand().hashCode();
       hash = (37 * hash) + FISCALPOWER_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getFiscalPower()));
+          Double.doubleToLongBits(getFiscalPower()));
       hash = (37 * hash) + MODEL_FIELD_NUMBER;
       hash = (53 * hash) + getModel().hashCode();
       if (hasProprietaire()) {
@@ -2487,69 +2487,69 @@ public final class RadarOuterClass {
       return hash;
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(byte[] data)
+    public static Vehicule parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(java.io.InputStream input)
+    public static Vehicule parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseDelimitedFrom(java.io.InputStream input)
+    public static Vehicule parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseDelimitedFrom(
+    public static Vehicule parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Vehicule parseFrom(
+    public static Vehicule parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -2557,23 +2557,23 @@ public final class RadarOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(yas.kr.stubs.RadarOuterClass.Vehicule prototype) {
+    public static Builder newBuilder(Vehicule prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -2583,18 +2583,18 @@ public final class RadarOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Vehicule)
-        yas.kr.stubs.RadarOuterClass.VehiculeOrBuilder {
+        VehiculeOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Vehicule_descriptor;
+        return RadarOuterClass.internal_static_Vehicule_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Vehicule_fieldAccessorTable
+        return RadarOuterClass.internal_static_Vehicule_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                yas.kr.stubs.RadarOuterClass.Vehicule.class, yas.kr.stubs.RadarOuterClass.Vehicule.Builder.class);
+                Vehicule.class, Builder.class);
       }
 
       // Construct using yas.kr.stubs.RadarOuterClass.Vehicule.newBuilder()
@@ -2603,7 +2603,7 @@ public final class RadarOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -2612,7 +2612,7 @@ public final class RadarOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         id_ = 0L;
@@ -2634,29 +2634,29 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Vehicule_descriptor;
+        return RadarOuterClass.internal_static_Vehicule_descriptor;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Vehicule getDefaultInstanceForType() {
-        return yas.kr.stubs.RadarOuterClass.Vehicule.getDefaultInstance();
+      @Override
+      public Vehicule getDefaultInstanceForType() {
+        return Vehicule.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Vehicule build() {
-        yas.kr.stubs.RadarOuterClass.Vehicule result = buildPartial();
+      @Override
+      public Vehicule build() {
+        Vehicule result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Vehicule buildPartial() {
-        yas.kr.stubs.RadarOuterClass.Vehicule result = new yas.kr.stubs.RadarOuterClass.Vehicule(this);
+      @Override
+      public Vehicule buildPartial() {
+        Vehicule result = new Vehicule(this);
         result.id_ = id_;
         result.regNumber_ = regNumber_;
         result.brand_ = brand_;
@@ -2671,50 +2671,50 @@ public final class RadarOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yas.kr.stubs.RadarOuterClass.Vehicule) {
-          return mergeFrom((yas.kr.stubs.RadarOuterClass.Vehicule)other);
+        if (other instanceof Vehicule) {
+          return mergeFrom((Vehicule)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(yas.kr.stubs.RadarOuterClass.Vehicule other) {
-        if (other == yas.kr.stubs.RadarOuterClass.Vehicule.getDefaultInstance()) return this;
+      public Builder mergeFrom(Vehicule other) {
+        if (other == Vehicule.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -2741,21 +2741,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        yas.kr.stubs.RadarOuterClass.Vehicule parsedMessage = null;
+        Vehicule parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (yas.kr.stubs.RadarOuterClass.Vehicule) e.getUnfinishedMessage();
+          parsedMessage = (Vehicule) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -2795,21 +2795,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object regNumber_ = "";
+      private Object regNumber_ = "";
       /**
        * <code>string regNumber = 2;</code>
        * @return The regNumber.
        */
-      public java.lang.String getRegNumber() {
-        java.lang.Object ref = regNumber_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getRegNumber() {
+        Object ref = regNumber_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           regNumber_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -2818,11 +2818,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getRegNumberBytes() {
-        java.lang.Object ref = regNumber_;
+        Object ref = regNumber_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           regNumber_ = b;
           return b;
         } else {
@@ -2835,7 +2835,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setRegNumber(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2871,21 +2871,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object brand_ = "";
+      private Object brand_ = "";
       /**
        * <code>string brand = 3;</code>
        * @return The brand.
        */
-      public java.lang.String getBrand() {
-        java.lang.Object ref = brand_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getBrand() {
+        Object ref = brand_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           brand_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -2894,11 +2894,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getBrandBytes() {
-        java.lang.Object ref = brand_;
+        Object ref = brand_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           brand_ = b;
           return b;
         } else {
@@ -2911,7 +2911,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setBrand(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -2977,21 +2977,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object model_ = "";
+      private Object model_ = "";
       /**
        * <code>string model = 5;</code>
        * @return The model.
        */
-      public java.lang.String getModel() {
-        java.lang.Object ref = model_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getModel() {
+        Object ref = model_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           model_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -3000,11 +3000,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getModelBytes() {
-        java.lang.Object ref = model_;
+        Object ref = model_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           model_ = b;
           return b;
         } else {
@@ -3017,7 +3017,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setModel(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -3053,9 +3053,9 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private yas.kr.stubs.RadarOuterClass.Proprietaire proprietaire_;
+      private Proprietaire proprietaire_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Proprietaire, yas.kr.stubs.RadarOuterClass.Proprietaire.Builder, yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder> proprietaireBuilder_;
+          Proprietaire, Proprietaire.Builder, ProprietaireOrBuilder> proprietaireBuilder_;
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        * @return Whether the proprietaire field is set.
@@ -3067,9 +3067,9 @@ public final class RadarOuterClass {
        * <code>.Proprietaire proprietaire = 6;</code>
        * @return The proprietaire.
        */
-      public yas.kr.stubs.RadarOuterClass.Proprietaire getProprietaire() {
+      public Proprietaire getProprietaire() {
         if (proprietaireBuilder_ == null) {
-          return proprietaire_ == null ? yas.kr.stubs.RadarOuterClass.Proprietaire.getDefaultInstance() : proprietaire_;
+          return proprietaire_ == null ? Proprietaire.getDefaultInstance() : proprietaire_;
         } else {
           return proprietaireBuilder_.getMessage();
         }
@@ -3077,7 +3077,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        */
-      public Builder setProprietaire(yas.kr.stubs.RadarOuterClass.Proprietaire value) {
+      public Builder setProprietaire(Proprietaire value) {
         if (proprietaireBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -3094,7 +3094,7 @@ public final class RadarOuterClass {
        * <code>.Proprietaire proprietaire = 6;</code>
        */
       public Builder setProprietaire(
-          yas.kr.stubs.RadarOuterClass.Proprietaire.Builder builderForValue) {
+          Proprietaire.Builder builderForValue) {
         if (proprietaireBuilder_ == null) {
           proprietaire_ = builderForValue.build();
           onChanged();
@@ -3107,11 +3107,11 @@ public final class RadarOuterClass {
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        */
-      public Builder mergeProprietaire(yas.kr.stubs.RadarOuterClass.Proprietaire value) {
+      public Builder mergeProprietaire(Proprietaire value) {
         if (proprietaireBuilder_ == null) {
           if (proprietaire_ != null) {
             proprietaire_ =
-              yas.kr.stubs.RadarOuterClass.Proprietaire.newBuilder(proprietaire_).mergeFrom(value).buildPartial();
+              Proprietaire.newBuilder(proprietaire_).mergeFrom(value).buildPartial();
           } else {
             proprietaire_ = value;
           }
@@ -3139,7 +3139,7 @@ public final class RadarOuterClass {
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.Proprietaire.Builder getProprietaireBuilder() {
+      public Proprietaire.Builder getProprietaireBuilder() {
         
         onChanged();
         return getProprietaireFieldBuilder().getBuilder();
@@ -3147,23 +3147,23 @@ public final class RadarOuterClass {
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        */
-      public yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder getProprietaireOrBuilder() {
+      public ProprietaireOrBuilder getProprietaireOrBuilder() {
         if (proprietaireBuilder_ != null) {
           return proprietaireBuilder_.getMessageOrBuilder();
         } else {
           return proprietaire_ == null ?
-              yas.kr.stubs.RadarOuterClass.Proprietaire.getDefaultInstance() : proprietaire_;
+              Proprietaire.getDefaultInstance() : proprietaire_;
         }
       }
       /**
        * <code>.Proprietaire proprietaire = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          yas.kr.stubs.RadarOuterClass.Proprietaire, yas.kr.stubs.RadarOuterClass.Proprietaire.Builder, yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder> 
+          Proprietaire, Proprietaire.Builder, ProprietaireOrBuilder>
           getProprietaireFieldBuilder() {
         if (proprietaireBuilder_ == null) {
           proprietaireBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              yas.kr.stubs.RadarOuterClass.Proprietaire, yas.kr.stubs.RadarOuterClass.Proprietaire.Builder, yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder>(
+              Proprietaire, Proprietaire.Builder, ProprietaireOrBuilder>(
                   getProprietaire(),
                   getParentForChildren(),
                   isClean());
@@ -3171,13 +3171,13 @@ public final class RadarOuterClass {
         }
         return proprietaireBuilder_;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -3188,18 +3188,18 @@ public final class RadarOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:Vehicule)
-    private static final yas.kr.stubs.RadarOuterClass.Vehicule DEFAULT_INSTANCE;
+    private static final Vehicule DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yas.kr.stubs.RadarOuterClass.Vehicule();
+      DEFAULT_INSTANCE = new Vehicule();
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Vehicule getDefaultInstance() {
+    public static Vehicule getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Vehicule>
         PARSER = new com.google.protobuf.AbstractParser<Vehicule>() {
-      @java.lang.Override
+      @Override
       public Vehicule parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3212,13 +3212,13 @@ public final class RadarOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Vehicule> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public yas.kr.stubs.RadarOuterClass.Vehicule getDefaultInstanceForType() {
+    @Override
+    public Vehicule getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3267,14 +3267,14 @@ public final class RadarOuterClass {
     private Radar() {
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new Radar();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -3285,7 +3285,7 @@ public final class RadarOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -3338,15 +3338,15 @@ public final class RadarOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Radar_descriptor;
+      return RadarOuterClass.internal_static_Radar_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Radar_fieldAccessorTable
+      return RadarOuterClass.internal_static_Radar_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              yas.kr.stubs.RadarOuterClass.Radar.class, yas.kr.stubs.RadarOuterClass.Radar.Builder.class);
+              Radar.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -3390,7 +3390,7 @@ public final class RadarOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -3400,7 +3400,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0L) {
@@ -3418,7 +3418,7 @@ public final class RadarOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -3445,32 +3445,32 @@ public final class RadarOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof yas.kr.stubs.RadarOuterClass.Radar)) {
+      if (!(obj instanceof Radar)) {
         return super.equals(obj);
       }
-      yas.kr.stubs.RadarOuterClass.Radar other = (yas.kr.stubs.RadarOuterClass.Radar) obj;
+      Radar other = (Radar) obj;
 
       if (getId()
           != other.getId()) return false;
-      if (java.lang.Double.doubleToLongBits(getMaxSpeed())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getMaxSpeed())
+          != Double.doubleToLongBits(
               other.getMaxSpeed())) return false;
-      if (java.lang.Double.doubleToLongBits(getLongitude())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getLongitude())
+          != Double.doubleToLongBits(
               other.getLongitude())) return false;
-      if (java.lang.Double.doubleToLongBits(getLatitude())
-          != java.lang.Double.doubleToLongBits(
+      if (Double.doubleToLongBits(getLatitude())
+          != Double.doubleToLongBits(
               other.getLatitude())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -3482,81 +3482,81 @@ public final class RadarOuterClass {
           getId());
       hash = (37 * hash) + MAXSPEED_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getMaxSpeed()));
+          Double.doubleToLongBits(getMaxSpeed()));
       hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getLongitude()));
+          Double.doubleToLongBits(getLongitude()));
       hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          java.lang.Double.doubleToLongBits(getLatitude()));
+          Double.doubleToLongBits(getLatitude()));
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(byte[] data)
+    public static Radar parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(java.io.InputStream input)
+    public static Radar parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseDelimitedFrom(java.io.InputStream input)
+    public static Radar parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseDelimitedFrom(
+    public static Radar parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Radar parseFrom(
+    public static Radar parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3564,23 +3564,23 @@ public final class RadarOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(yas.kr.stubs.RadarOuterClass.Radar prototype) {
+    public static Builder newBuilder(Radar prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -3590,18 +3590,18 @@ public final class RadarOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Radar)
-        yas.kr.stubs.RadarOuterClass.RadarOrBuilder {
+        RadarOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Radar_descriptor;
+        return RadarOuterClass.internal_static_Radar_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Radar_fieldAccessorTable
+        return RadarOuterClass.internal_static_Radar_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                yas.kr.stubs.RadarOuterClass.Radar.class, yas.kr.stubs.RadarOuterClass.Radar.Builder.class);
+                Radar.class, Builder.class);
       }
 
       // Construct using yas.kr.stubs.RadarOuterClass.Radar.newBuilder()
@@ -3610,7 +3610,7 @@ public final class RadarOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -3619,7 +3619,7 @@ public final class RadarOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         id_ = 0L;
@@ -3633,29 +3633,29 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Radar_descriptor;
+        return RadarOuterClass.internal_static_Radar_descriptor;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Radar getDefaultInstanceForType() {
-        return yas.kr.stubs.RadarOuterClass.Radar.getDefaultInstance();
+      @Override
+      public Radar getDefaultInstanceForType() {
+        return Radar.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Radar build() {
-        yas.kr.stubs.RadarOuterClass.Radar result = buildPartial();
+      @Override
+      public Radar build() {
+        Radar result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Radar buildPartial() {
-        yas.kr.stubs.RadarOuterClass.Radar result = new yas.kr.stubs.RadarOuterClass.Radar(this);
+      @Override
+      public Radar buildPartial() {
+        Radar result = new Radar(this);
         result.id_ = id_;
         result.maxSpeed_ = maxSpeed_;
         result.longitude_ = longitude_;
@@ -3664,50 +3664,50 @@ public final class RadarOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yas.kr.stubs.RadarOuterClass.Radar) {
-          return mergeFrom((yas.kr.stubs.RadarOuterClass.Radar)other);
+        if (other instanceof Radar) {
+          return mergeFrom((Radar)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(yas.kr.stubs.RadarOuterClass.Radar other) {
-        if (other == yas.kr.stubs.RadarOuterClass.Radar.getDefaultInstance()) return this;
+      public Builder mergeFrom(Radar other) {
+        if (other == Radar.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -3725,21 +3725,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        yas.kr.stubs.RadarOuterClass.Radar parsedMessage = null;
+        Radar parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (yas.kr.stubs.RadarOuterClass.Radar) e.getUnfinishedMessage();
+          parsedMessage = (Radar) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -3868,13 +3868,13 @@ public final class RadarOuterClass {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -3885,18 +3885,18 @@ public final class RadarOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:Radar)
-    private static final yas.kr.stubs.RadarOuterClass.Radar DEFAULT_INSTANCE;
+    private static final Radar DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yas.kr.stubs.RadarOuterClass.Radar();
+      DEFAULT_INSTANCE = new Radar();
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Radar getDefaultInstance() {
+    public static Radar getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Radar>
         PARSER = new com.google.protobuf.AbstractParser<Radar>() {
-      @java.lang.Override
+      @Override
       public Radar parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3909,13 +3909,13 @@ public final class RadarOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Radar> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public yas.kr.stubs.RadarOuterClass.Radar getDefaultInstanceForType() {
+    @Override
+    public Radar getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -3935,7 +3935,7 @@ public final class RadarOuterClass {
      * <code>string nom = 2;</code>
      * @return The nom.
      */
-    java.lang.String getNom();
+    String getNom();
     /**
      * <code>string nom = 2;</code>
      * @return The bytes for nom.
@@ -3947,7 +3947,7 @@ public final class RadarOuterClass {
      * <code>string DateNaissance = 3;</code>
      * @return The dateNaissance.
      */
-    java.lang.String getDateNaissance();
+    String getDateNaissance();
     /**
      * <code>string DateNaissance = 3;</code>
      * @return The bytes for dateNaissance.
@@ -3959,7 +3959,7 @@ public final class RadarOuterClass {
      * <code>string email = 4;</code>
      * @return The email.
      */
-    java.lang.String getEmail();
+    String getEmail();
     /**
      * <code>string email = 4;</code>
      * @return The bytes for email.
@@ -3985,14 +3985,14 @@ public final class RadarOuterClass {
       email_ = "";
     }
 
-    @java.lang.Override
+    @Override
     @SuppressWarnings({"unused"})
-    protected java.lang.Object newInstance(
+    protected Object newInstance(
         UnusedPrivateParameter unused) {
       return new Proprietaire();
     }
 
-    @java.lang.Override
+    @Override
     public final com.google.protobuf.UnknownFieldSet
     getUnknownFields() {
       return this.unknownFields;
@@ -4003,7 +4003,7 @@ public final class RadarOuterClass {
         throws com.google.protobuf.InvalidProtocolBufferException {
       this();
       if (extensionRegistry == null) {
-        throw new java.lang.NullPointerException();
+        throw new NullPointerException();
       }
       com.google.protobuf.UnknownFieldSet.Builder unknownFields =
           com.google.protobuf.UnknownFieldSet.newBuilder();
@@ -4021,19 +4021,19 @@ public final class RadarOuterClass {
               break;
             }
             case 18: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               nom_ = s;
               break;
             }
             case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               dateNaissance_ = s;
               break;
             }
             case 34: {
-              java.lang.String s = input.readStringRequireUtf8();
+              String s = input.readStringRequireUtf8();
 
               email_ = s;
               break;
@@ -4059,15 +4059,15 @@ public final class RadarOuterClass {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Proprietaire_descriptor;
+      return RadarOuterClass.internal_static_Proprietaire_descriptor;
     }
 
-    @java.lang.Override
-    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+    @Override
+    protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return yas.kr.stubs.RadarOuterClass.internal_static_Proprietaire_fieldAccessorTable
+      return RadarOuterClass.internal_static_Proprietaire_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              yas.kr.stubs.RadarOuterClass.Proprietaire.class, yas.kr.stubs.RadarOuterClass.Proprietaire.Builder.class);
+              Proprietaire.class, Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -4081,19 +4081,19 @@ public final class RadarOuterClass {
     }
 
     public static final int NOM_FIELD_NUMBER = 2;
-    private volatile java.lang.Object nom_;
+    private volatile Object nom_;
     /**
      * <code>string nom = 2;</code>
      * @return The nom.
      */
-    public java.lang.String getNom() {
-      java.lang.Object ref = nom_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getNom() {
+      Object ref = nom_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         nom_ = s;
         return s;
       }
@@ -4104,11 +4104,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getNomBytes() {
-      java.lang.Object ref = nom_;
-      if (ref instanceof java.lang.String) {
+      Object ref = nom_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         nom_ = b;
         return b;
       } else {
@@ -4117,19 +4117,19 @@ public final class RadarOuterClass {
     }
 
     public static final int DATENAISSANCE_FIELD_NUMBER = 3;
-    private volatile java.lang.Object dateNaissance_;
+    private volatile Object dateNaissance_;
     /**
      * <code>string DateNaissance = 3;</code>
      * @return The dateNaissance.
      */
-    public java.lang.String getDateNaissance() {
-      java.lang.Object ref = dateNaissance_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getDateNaissance() {
+      Object ref = dateNaissance_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         dateNaissance_ = s;
         return s;
       }
@@ -4140,11 +4140,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getDateNaissanceBytes() {
-      java.lang.Object ref = dateNaissance_;
-      if (ref instanceof java.lang.String) {
+      Object ref = dateNaissance_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         dateNaissance_ = b;
         return b;
       } else {
@@ -4153,19 +4153,19 @@ public final class RadarOuterClass {
     }
 
     public static final int EMAIL_FIELD_NUMBER = 4;
-    private volatile java.lang.Object email_;
+    private volatile Object email_;
     /**
      * <code>string email = 4;</code>
      * @return The email.
      */
-    public java.lang.String getEmail() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
+    public String getEmail() {
+      Object ref = email_;
+      if (ref instanceof String) {
+        return (String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
+        String s = bs.toStringUtf8();
         email_ = s;
         return s;
       }
@@ -4176,11 +4176,11 @@ public final class RadarOuterClass {
      */
     public com.google.protobuf.ByteString
         getEmailBytes() {
-      java.lang.Object ref = email_;
-      if (ref instanceof java.lang.String) {
+      Object ref = email_;
+      if (ref instanceof String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
+                (String) ref);
         email_ = b;
         return b;
       } else {
@@ -4189,7 +4189,7 @@ public final class RadarOuterClass {
     }
 
     private byte memoizedIsInitialized = -1;
-    @java.lang.Override
+    @Override
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized == 1) return true;
@@ -4199,7 +4199,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (id_ != 0L) {
@@ -4217,7 +4217,7 @@ public final class RadarOuterClass {
       unknownFields.writeTo(output);
     }
 
-    @java.lang.Override
+    @Override
     public int getSerializedSize() {
       int size = memoizedSize;
       if (size != -1) return size;
@@ -4241,15 +4241,15 @@ public final class RadarOuterClass {
       return size;
     }
 
-    @java.lang.Override
-    public boolean equals(final java.lang.Object obj) {
+    @Override
+    public boolean equals(final Object obj) {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof yas.kr.stubs.RadarOuterClass.Proprietaire)) {
+      if (!(obj instanceof Proprietaire)) {
         return super.equals(obj);
       }
-      yas.kr.stubs.RadarOuterClass.Proprietaire other = (yas.kr.stubs.RadarOuterClass.Proprietaire) obj;
+      Proprietaire other = (Proprietaire) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -4263,7 +4263,7 @@ public final class RadarOuterClass {
       return true;
     }
 
-    @java.lang.Override
+    @Override
     public int hashCode() {
       if (memoizedHashCode != 0) {
         return memoizedHashCode;
@@ -4284,69 +4284,69 @@ public final class RadarOuterClass {
       return hash;
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(byte[] data)
+    public static Proprietaire parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(java.io.InputStream input)
+    public static Proprietaire parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseDelimitedFrom(java.io.InputStream input)
+    public static Proprietaire parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseDelimitedFrom(
+    public static Proprietaire parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire parseFrom(
+    public static Proprietaire parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4354,23 +4354,23 @@ public final class RadarOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    @java.lang.Override
+    @Override
     public Builder newBuilderForType() { return newBuilder(); }
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(yas.kr.stubs.RadarOuterClass.Proprietaire prototype) {
+    public static Builder newBuilder(Proprietaire prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
-    @java.lang.Override
+    @Override
     public Builder toBuilder() {
       return this == DEFAULT_INSTANCE
           ? new Builder() : new Builder().mergeFrom(this);
     }
 
-    @java.lang.Override
+    @Override
     protected Builder newBuilderForType(
-        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        BuilderParent parent) {
       Builder builder = new Builder(parent);
       return builder;
     }
@@ -4380,18 +4380,18 @@ public final class RadarOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:Proprietaire)
-        yas.kr.stubs.RadarOuterClass.ProprietaireOrBuilder {
+        ProprietaireOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Proprietaire_descriptor;
+        return RadarOuterClass.internal_static_Proprietaire_descriptor;
       }
 
-      @java.lang.Override
-      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      @Override
+      protected FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Proprietaire_fieldAccessorTable
+        return RadarOuterClass.internal_static_Proprietaire_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                yas.kr.stubs.RadarOuterClass.Proprietaire.class, yas.kr.stubs.RadarOuterClass.Proprietaire.Builder.class);
+                Proprietaire.class, Builder.class);
       }
 
       // Construct using yas.kr.stubs.RadarOuterClass.Proprietaire.newBuilder()
@@ -4400,7 +4400,7 @@ public final class RadarOuterClass {
       }
 
       private Builder(
-          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+          BuilderParent parent) {
         super(parent);
         maybeForceBuilderInitialization();
       }
@@ -4409,7 +4409,7 @@ public final class RadarOuterClass {
                 .alwaysUseFieldBuilders) {
         }
       }
-      @java.lang.Override
+      @Override
       public Builder clear() {
         super.clear();
         id_ = 0L;
@@ -4423,29 +4423,29 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return yas.kr.stubs.RadarOuterClass.internal_static_Proprietaire_descriptor;
+        return RadarOuterClass.internal_static_Proprietaire_descriptor;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Proprietaire getDefaultInstanceForType() {
-        return yas.kr.stubs.RadarOuterClass.Proprietaire.getDefaultInstance();
+      @Override
+      public Proprietaire getDefaultInstanceForType() {
+        return Proprietaire.getDefaultInstance();
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Proprietaire build() {
-        yas.kr.stubs.RadarOuterClass.Proprietaire result = buildPartial();
+      @Override
+      public Proprietaire build() {
+        Proprietaire result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      @java.lang.Override
-      public yas.kr.stubs.RadarOuterClass.Proprietaire buildPartial() {
-        yas.kr.stubs.RadarOuterClass.Proprietaire result = new yas.kr.stubs.RadarOuterClass.Proprietaire(this);
+      @Override
+      public Proprietaire buildPartial() {
+        Proprietaire result = new Proprietaire(this);
         result.id_ = id_;
         result.nom_ = nom_;
         result.dateNaissance_ = dateNaissance_;
@@ -4454,50 +4454,50 @@ public final class RadarOuterClass {
         return result;
       }
 
-      @java.lang.Override
+      @Override
       public Builder clone() {
         return super.clone();
       }
-      @java.lang.Override
+      @Override
       public Builder setField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.setField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder clearField(
           com.google.protobuf.Descriptors.FieldDescriptor field) {
         return super.clearField(field);
       }
-      @java.lang.Override
+      @Override
       public Builder clearOneof(
           com.google.protobuf.Descriptors.OneofDescriptor oneof) {
         return super.clearOneof(oneof);
       }
-      @java.lang.Override
+      @Override
       public Builder setRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          int index, java.lang.Object value) {
+          int index, Object value) {
         return super.setRepeatedField(field, index, value);
       }
-      @java.lang.Override
+      @Override
       public Builder addRepeatedField(
           com.google.protobuf.Descriptors.FieldDescriptor field,
-          java.lang.Object value) {
+          Object value) {
         return super.addRepeatedField(field, value);
       }
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof yas.kr.stubs.RadarOuterClass.Proprietaire) {
-          return mergeFrom((yas.kr.stubs.RadarOuterClass.Proprietaire)other);
+        if (other instanceof Proprietaire) {
+          return mergeFrom((Proprietaire)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(yas.kr.stubs.RadarOuterClass.Proprietaire other) {
-        if (other == yas.kr.stubs.RadarOuterClass.Proprietaire.getDefaultInstance()) return this;
+      public Builder mergeFrom(Proprietaire other) {
+        if (other == Proprietaire.getDefaultInstance()) return this;
         if (other.getId() != 0L) {
           setId(other.getId());
         }
@@ -4518,21 +4518,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      @java.lang.Override
+      @Override
       public final boolean isInitialized() {
         return true;
       }
 
-      @java.lang.Override
+      @Override
       public Builder mergeFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        yas.kr.stubs.RadarOuterClass.Proprietaire parsedMessage = null;
+        Proprietaire parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (yas.kr.stubs.RadarOuterClass.Proprietaire) e.getUnfinishedMessage();
+          parsedMessage = (Proprietaire) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -4572,21 +4572,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object nom_ = "";
+      private Object nom_ = "";
       /**
        * <code>string nom = 2;</code>
        * @return The nom.
        */
-      public java.lang.String getNom() {
-        java.lang.Object ref = nom_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getNom() {
+        Object ref = nom_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           nom_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4595,11 +4595,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getNomBytes() {
-        java.lang.Object ref = nom_;
+        Object ref = nom_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           nom_ = b;
           return b;
         } else {
@@ -4612,7 +4612,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setNom(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4648,21 +4648,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object dateNaissance_ = "";
+      private Object dateNaissance_ = "";
       /**
        * <code>string DateNaissance = 3;</code>
        * @return The dateNaissance.
        */
-      public java.lang.String getDateNaissance() {
-        java.lang.Object ref = dateNaissance_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getDateNaissance() {
+        Object ref = dateNaissance_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           dateNaissance_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4671,11 +4671,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getDateNaissanceBytes() {
-        java.lang.Object ref = dateNaissance_;
+        Object ref = dateNaissance_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           dateNaissance_ = b;
           return b;
         } else {
@@ -4688,7 +4688,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setDateNaissance(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4724,21 +4724,21 @@ public final class RadarOuterClass {
         return this;
       }
 
-      private java.lang.Object email_ = "";
+      private Object email_ = "";
       /**
        * <code>string email = 4;</code>
        * @return The email.
        */
-      public java.lang.String getEmail() {
-        java.lang.Object ref = email_;
-        if (!(ref instanceof java.lang.String)) {
+      public String getEmail() {
+        Object ref = email_;
+        if (!(ref instanceof String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
+          String s = bs.toStringUtf8();
           email_ = s;
           return s;
         } else {
-          return (java.lang.String) ref;
+          return (String) ref;
         }
       }
       /**
@@ -4747,11 +4747,11 @@ public final class RadarOuterClass {
        */
       public com.google.protobuf.ByteString
           getEmailBytes() {
-        java.lang.Object ref = email_;
+        Object ref = email_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
+                  (String) ref);
           email_ = b;
           return b;
         } else {
@@ -4764,7 +4764,7 @@ public final class RadarOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEmail(
-          java.lang.String value) {
+          String value) {
         if (value == null) {
     throw new NullPointerException();
   }
@@ -4799,13 +4799,13 @@ public final class RadarOuterClass {
         onChanged();
         return this;
       }
-      @java.lang.Override
+      @Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.setUnknownFields(unknownFields);
       }
 
-      @java.lang.Override
+      @Override
       public final Builder mergeUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
         return super.mergeUnknownFields(unknownFields);
@@ -4816,18 +4816,18 @@ public final class RadarOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:Proprietaire)
-    private static final yas.kr.stubs.RadarOuterClass.Proprietaire DEFAULT_INSTANCE;
+    private static final Proprietaire DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new yas.kr.stubs.RadarOuterClass.Proprietaire();
+      DEFAULT_INSTANCE = new Proprietaire();
     }
 
-    public static yas.kr.stubs.RadarOuterClass.Proprietaire getDefaultInstance() {
+    public static Proprietaire getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
     private static final com.google.protobuf.Parser<Proprietaire>
         PARSER = new com.google.protobuf.AbstractParser<Proprietaire>() {
-      @java.lang.Override
+      @Override
       public Proprietaire parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4840,13 +4840,13 @@ public final class RadarOuterClass {
       return PARSER;
     }
 
-    @java.lang.Override
+    @Override
     public com.google.protobuf.Parser<Proprietaire> getParserForType() {
       return PARSER;
     }
 
-    @java.lang.Override
-    public yas.kr.stubs.RadarOuterClass.Proprietaire getDefaultInstanceForType() {
+    @Override
+    public Proprietaire getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -4885,7 +4885,7 @@ public final class RadarOuterClass {
   private static  com.google.protobuf.Descriptors.FileDescriptor
       descriptor;
   static {
-    java.lang.String[] descriptorData = {
+    String[] descriptorData = {
       "\n\013Radar.proto\"C\n\rDetectRequest\022\017\n\007radarI" +
       "d\030\001 \001(\003\022\022\n\nvehiculeId\030\002 \001(\003\022\r\n\005speed\030\003 \001" +
       "(\001\"\301\001\n\nInfraction\022\n\n\002id\030\001 \001(\003\022\014\n\004date\030\002 " +
@@ -4913,31 +4913,31 @@ public final class RadarOuterClass {
     internal_static_DetectRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DetectRequest_descriptor,
-        new java.lang.String[] { "RadarId", "VehiculeId", "Speed", });
+        new String[] { "RadarId", "VehiculeId", "Speed", });
     internal_static_Infraction_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Infraction_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Infraction_descriptor,
-        new java.lang.String[] { "Id", "Date", "VehiculeSpeed", "RadarMaxSpeed", "FineAmount", "RadarId", "VehiculeId", "Vehicule", "Radar", });
+        new String[] { "Id", "Date", "VehiculeSpeed", "RadarMaxSpeed", "FineAmount", "RadarId", "VehiculeId", "Vehicule", "Radar", });
     internal_static_Vehicule_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_Vehicule_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Vehicule_descriptor,
-        new java.lang.String[] { "Id", "RegNumber", "Brand", "FiscalPower", "Model", "Proprietaire", });
+        new String[] { "Id", "RegNumber", "Brand", "FiscalPower", "Model", "Proprietaire", });
     internal_static_Radar_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_Radar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Radar_descriptor,
-        new java.lang.String[] { "Id", "MaxSpeed", "Longitude", "Latitude", });
+        new String[] { "Id", "MaxSpeed", "Longitude", "Latitude", });
     internal_static_Proprietaire_descriptor =
       getDescriptor().getMessageTypes().get(4);
     internal_static_Proprietaire_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Proprietaire_descriptor,
-        new java.lang.String[] { "Id", "Nom", "DateNaissance", "Email", });
+        new String[] { "Id", "Nom", "DateNaissance", "Email", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
