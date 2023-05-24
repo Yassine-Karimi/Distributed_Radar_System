@@ -1,0 +1,28 @@
+type Proprietaire {
+    id: ID!
+    nom: String!
+    dateNaissance: String!
+    email: String!
+    adresse: String!
+}
+
+type Vehicule {
+    id: ID!
+    numeroMatricule: String!
+    marque: String!
+    puissanceFiscale: Int!
+    modele: String!
+    # Autres champs
+}
+
+type Query {
+    proprietaires: [Proprietaire!]!
+    vehicules: [Vehicule!]!
+    proprietaire(id: ID!): Proprietaire
+    vehicule(id: ID!): Vehicule
+}
+
+type Mutation {
+    createProprietaire(nom: String!, dateNaissance: String!, email: String!, adresse: String! ): Proprietaire!
+    createVehicule(numeroMatricule: String!, marque: String!, puissanceFiscale: Int!, modele: String!): Vehicule!
+}

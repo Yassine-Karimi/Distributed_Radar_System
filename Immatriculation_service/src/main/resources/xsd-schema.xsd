@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://ws">
+    <xsd:element name="GetProprietaireequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id" type="xsd:long"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="GetProprietaireResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="proprietaire" type="Proprietaire"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:complexType name="Proprietaire">
+        <xsd:sequence>
+            <xsd:element name="id" type="xsd:long"></xsd:element>
+            <xsd:element name="nom" type="xsd:string"></xsd:element>
+            <xsd:element name="dateNaissance" type="xsd:string"></xsd:element>
+            <xsd:element name="email" type="xsd:string"></xsd:element>
+            <xsd:element name="adresse" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

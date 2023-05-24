@@ -1,0 +1,94 @@
+syntax = "proto3";
+option java_package="yas.kr.immatriculaationsService.grpc.stub";
+
+// Définition des messages
+
+message Proprietaire {
+  int64 id = 1;
+  string nom = 2;
+  string dateNaissance = 3;
+  string email = 4;
+  string adresse =5;
+  // Autres champs
+}
+
+message Vehicule {
+  int64 id = 1;
+  string numeroMatricule = 2;
+  string marque = 3;
+  int32 puissanceFiscale = 4;
+  string modele = 5;
+
+  // Autres champs
+}
+
+message CreateProprietaireRequest {
+  string nom = 1;
+  string dateNaissance = 2;
+  string email = 3;
+}
+
+message CreateProprietaireResponse {
+  Proprietaire proprietaire = 1;
+}
+
+message CreateVehiculeRequest {
+  string numeroMatricule = 1;
+  string marque = 2;
+  int32 puissanceFiscale = 3;
+  string modele = 4;
+}
+
+message CreateVehiculeResponse {
+  Vehicule vehicule = 1;
+}
+
+// Définition du service Immatriculation
+message GetProprietaireRequest {
+  int64 id = 1;
+}
+
+message GetProprietaireResponse {
+  Proprietaire proprietaire = 1;
+}
+
+message GetAllProprietairesRequest {}
+
+message GetAllProprietairesResponse {
+  repeated Proprietaire proprietaire = 1;
+}
+
+
+
+
+
+
+
+//vehicule
+message GetVehiculeRequest {
+  int64 id = 1;
+}
+
+message GetVehiculeResponse  {
+  Vehicule vehicule = 1;
+}
+
+message GetAllVehiculesRequest {}
+
+message GetAllVehiculesResponse {
+  repeated Vehicule vehicule = 1;
+}
+
+
+service ImmatriculationService {
+  rpc CreateProprietaire(CreateProprietaireRequest) returns (CreateProprietaireResponse);
+  rpc CreateVehicule(CreateVehiculeRequest) returns (CreateVehiculeResponse);
+  rpc getProprietaire(GetProprietaireRequest) returns (GetProprietaireResponse);
+  rpc listProprietaires(GetAllProprietairesRequest) returns (GetAllProprietairesResponse);
+  rpc getVehicule(GetVehiculeRequest) returns (GetVehiculeResponse);
+  rpc listVehicules(GetAllVehiculesRequest) returns (GetAllVehiculesResponse);
+  // Autres méthodes pour les opérations de modification
+
+
+
+}
