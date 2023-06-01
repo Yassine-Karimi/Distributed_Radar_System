@@ -46,11 +46,11 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
 
 ## Le test des web services : 
 * Rest
-* * GET
+ * GET
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/1acca6e7-026d-4850-a8c9-8d9284a43672)
-** POST
+ * POST
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/d378b28a-511d-43e9-8f99-b50aa686cb6f)
-** PUT
+ * PUT
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/3e874ba1-fd8f-42bf-9c61-0c289ff7a56d)
 
 
