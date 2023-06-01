@@ -53,6 +53,11 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
 * * PUT
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/3e874ba1-fd8f-42bf-9c61-0c289ff7a56d)
 
+* GRPC :
+* * ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/b0f975af-5937-467c-992f-35089f4e2912)
+* * ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/60673002-6b8f-4efa-a71f-4194b044b381)
+
+
 
 
 
