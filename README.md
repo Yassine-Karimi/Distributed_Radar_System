@@ -42,7 +42,7 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
 
 *Diagramme de Classe du Micro-service de Gestion des Infractions
 
-![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/3aa7fc5b-260d-488b-8764-3a469a927adf)
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/3aa7fc5b-260d-488b-8764-3a469a927adf)*
 
 ## Le test des web services : 
 * Rest
@@ -60,8 +60,12 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
  ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/95b6d40f-0704-4f4b-a173-d73336315679)
 * * Creer un nouveau proprietaire
  ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/0d626315-647b-4cc8-8b77-1296bf92f62f)
+ 
+* GraphQL
+* * Query
+  
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/79461dca-c51e-494f-ac39-eb7ddd77686d)
 
-
-
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/11615bbc-1ca4-4c03-9d7e-9629b19578bc)
 
 
