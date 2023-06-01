@@ -31,60 +31,8 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
 * 
 ### Diagramme de classe:
 * Diagramme de Classe du Micro-service de Gestion des Radars
-*+------------------------+
-|       Radar            |
-+------------------------+
-| - id: String           |
-| - vitesseMaximale: int |
-| - longitude: double    |
-| - latitude: double     |
-+------------------------+
-| + getId(): String      |
-| + getVitesseMaximale(): int |
-| + getLongitude(): double |
-| + getLatitude(): double |
-| + setId(id: String): void |
-| + setVitesseMaximale(vitesse: int): void |
-| + setLongitude(longitude: double): void |
-| + setLatitude(latitude: double): void |
-+------------------------+
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/be9d9b1a-7e1b-4184-879a-de30bdfcb7ff)
+
 * Diagramme de Classe du Micro-service de Gestion des Immatriculations
-+------------------------+
-|       Proprietaire     |
-+------------------------+
-| - id: String           |
-| - nom: String          |
-| - dateNaissance: Date  |
-| - email: String        |
-+------------------------+
-| + getId(): String      |
-| + getNom(): String     |
-| + getDateNaissance(): Date |
-| + getEmail(): String   |
-| + setId(id: String): void |
-| + setNom(nom: String): void |
-| + setDateNaissance(date: Date): void |
-| + setEmail(email: String): void |
-+------------------------+
-
-+------------------------+
-|       Vehicule          |
-+------------------------+
-| - id: String           |
-| - numeroMatricule: String |
-| - marque: String       |
-| - puissanceFiscale: int |
-| - modele: String       |
-+------------------------+
-| + getId(): String      |
-| + getNumeroMatricule(): String |
-| + getMarque(): String  |
-| + getPuissanceFiscale(): int |
-| + getModele(): String  |
-| + setId(id: String): void |
-| + setNumeroMatricule(numero: String): void |
-| + setMarque(marque: String): void |
-| + setPuissanceFiscale(puissance: int): void |
-| + setModele(modele: String): void |
-+------------------------+
-
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/1d394eb2-6539-43ab-8fa6-2a42be9c73a7)
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/accddd35-7498-4545-85f9-0927219f4ce4)
