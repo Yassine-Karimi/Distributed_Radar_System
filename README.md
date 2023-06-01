@@ -31,11 +31,23 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
 * 
 ### Diagramme de classe:
 * Diagramme de Classe du Micro-service de Gestion des Radars
-* 
+
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/be9d9b1a-7e1b-4184-879a-de30bdfcb7ff)
 
 * Diagramme de Classe du Micro-service de Gestion des Immatriculations
-* 
+
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/1d394eb2-6539-43ab-8fa6-2a42be9c73a7)
 
 ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/accddd35-7498-4545-85f9-0927219f4ce4)
+
+*Diagramme de Classe du Micro-service de Gestion des Infractions
+
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/3aa7fc5b-260d-488b-8764-3a469a927adf)
+
+## Le test des web services : 
+* Rest
+* * GET
+![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/1acca6e7-026d-4850-a8c9-8d9284a43672)
+
+
+
