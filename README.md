@@ -67,5 +67,19 @@ Dans la suite de ce projet, nous mettrons en œuvre les micro-services, en utili
  ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/79461dca-c51e-494f-ac39-eb7ddd77686d)
 
  ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/11615bbc-1ca4-4c03-9d7e-9629b19578bc)
+ 
+## Frondend :
+* Login
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/96dd3301-7883-4ef4-a0fa-57c5c26ba694)
+ 
+* Vehicules 
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/43610b56-2138-454d-a98a-17c494c5a78a)
+ 
+* Radars
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/1f686011-7a2a-4382-99e5-8b36b88a69df)
+ 
+* Infractions
+ ![image](https://github.com/Yassine-Karimi/Distributed_Radar_System/assets/66490404/9d4806f8-19fd-472b-bd50-1644df4b53c0)
+
 
 
